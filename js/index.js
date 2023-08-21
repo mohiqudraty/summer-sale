@@ -161,7 +161,7 @@ product5.addEventListener("click", function (params) {
   cartListContainer.appendChild(p);
 
   //   set element with calculation
-  const productPrice = getPrice("product-1-price");
+  const productPrice = getPrice("product-5-price");
   // sum with total price
   const totalPrice = getPreviousTotalPrice("total-price") + productPrice;
   totalPriceElement.innerText = totalPrice.toFixed(2);
