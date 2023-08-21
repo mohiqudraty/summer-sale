@@ -5,6 +5,7 @@ const totalElement = document.getElementById("total");
 const cartListContainer = document.getElementById("cart-list");
 const couponElement = document.getElementById("coupon-input");
 const applyBtn = document.getElementById("apply-btn");
+const purchaseBtn = document.getElementById("purchase-btn");
 const goToHomeBtn = document.getElementById("go-home-btn");
 
 // get all product1
@@ -54,7 +55,6 @@ product1.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -83,7 +83,6 @@ product2.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -112,7 +111,6 @@ product3.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -141,7 +139,6 @@ product4.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -170,7 +167,6 @@ product5.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -199,7 +195,6 @@ product6.addEventListener("click", function (params) {
   totalElement.innerText = total.toFixed(2);
 
   if (totalPrice > 0) {
-    const purchaseBtn = document.getElementById("purchase-btn");
     purchaseBtn.removeAttribute("disabled");
   }
   if (totalPrice >= 200) {
@@ -213,4 +208,6 @@ goToHomeBtn.addEventListener("click", function () {
   discountElement.innerText = "00";
   totalElement.innerText = "00";
   cartListContainer.innerHTML = "";
+  applyBtn.setAttribute("disabled", "disabled");
+  purchaseBtn.setAttribute("disabled", "disabled");
 });
